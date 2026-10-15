@@ -347,7 +347,7 @@ document.getElementById('copyEmail').addEventListener('click', function(){ var b
 </script>
 <script>
   // Latest signal: driven by latest.json (updated by the approved daily publish).
-  fetch('latest.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  fetch('https://signalfireaim.io/latest.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
     if(!d||!d.active||!d.text)return;
     const el=document.getElementById('latest-signal');
     el.querySelector('span').textContent=d.text+(d.date?' ('+d.date+')':'');
