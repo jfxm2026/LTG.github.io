@@ -76,6 +76,16 @@ h2{font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:800;font-size:
 .card h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:6px}
 .card .model{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
 .card p{font-size:.98rem;color:#31424f}
+  .cards.three{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:860px){.cards.three{grid-template-columns:1fr}}
+  .card .wk{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
+  .sprint-cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px}
+  @media(max-width:860px){.sprint-cols{grid-template-columns:1fr}}
+  .sprint-cols h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:12px}
+  .sprint-cols ul{margin:0;padding-left:18px;color:#31424f}
+  .sprint-cols li{margin-bottom:8px}
+  .venture .latest{display:none;margin:10px 0 12px;padding:10px 12px;border-left:3px solid var(--copper);background:var(--white);font-size:.92rem;color:#31424f}
+  .venture .latest b{display:block;font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--copper);margin-bottom:4px}
 .card a.more{display:inline-block;margin-top:12px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 
 /* flex table */
@@ -127,8 +137,10 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 <nav class="links" aria-label="Sections">
 <a href="#record">Record</a>
 <a href="#services">Engagements</a>
+<a href="#sprint">Sprint</a>
 <a href="#watch">AI Watch</a>
 <a href="#about">About</a>
+<a href="#speaking">Speaking</a>
 <a href="#ventures">Ventures</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -137,10 +149,11 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 
 <main id="top">
 <section class="hero wrap">
-<p class="eyebrow">James F. Murphy · Fractional Business Development</p>
+<p class="eyebrow">James F. Murphy · Fractional Business Development for AI-agent security &amp; identity companies</p>
 <h1>Pipeline, partnerships, and doors opened. On retainer.</h1>
 <p class="tagline">Fractional leadership for technology and AI companies. Fractional since 2011. One month or ongoing.</p>
 <p class="lede">I'm a business development executive with twenty-plus years and a $50M exit behind me. I embed with technology, AI, and infrastructure companies for 10–20 hours a week — 1099 or corp-to-corp — and do the thing I've always done: find the buyer, build the relationship, close the deal.</p>
+<p class="lede">My focus now: AI-agent security and identity startups that have raised and need their first senior seller. I already publish the market intelligence their buyers read — the <a href="https://signalfireaim.io/global-ai-watch.html">Global AI Watch</a> — so I start with the market mapped.</p>
 <div class="cta-row">
 <a class="btn primary" href="mailto:Jmurphy@lucastaylorgroup.com?subject=Fractional%20BD%20inquiry">Start a conversation</a>
 <a class="btn ghost" href="#record">See the record</a>
@@ -176,9 +189,10 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 <p>Warm introductions from twenty years of executive relationships across finance, government, retail, healthcare, and infrastructure. I've sold to Macy's, JPMC, Mack-Cali, and state municipalities.</p>
 </div>
 <div class="card reveal">
-<h3>Go-to-Market Sprint</h3>
-<p class="model">Fixed fee · 30–90 days</p>
-<p>Segmentation, messaging, channel and teaming strategy — finished with a working pipeline handed to your team, not a slide deck.</p>
+<h3>Agent-Security GTM Sprint</h3>
+<p class="model">From $12,500 · fixed fee · 30 days</p>
+<p>Built for AI-agent security and identity startups: a named list of the CISOs and buyers who should be talking to you, messaging tested against what they're reading this quarter, and first qualified meetings booked — handed to your team as a working pipeline, not a slide deck. Many retainers start here.</p>
+<a class="more" href="#sprint">See how the Sprint works →</a>
 </div>
 <div class="card reveal">
 <h3>Agentic AI Governance Advisory</h3>
@@ -189,6 +203,52 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 </div>
 </section>
 
+<section class="services wrap" id="sprint">
+<h2>The Agent-Security GTM Sprint</h2>
+<p class="sub">30 days. Fixed fee from $12,500. Built for AI-agent security and identity startups that have raised and need real pipeline in front of CISOs — before, or instead of, a full-time sales hire.</p>
+<div class="cards">
+<div class="card reveal">
+<p class="wk">Week 1</p>
+<h3>Map the market</h3>
+<p>Your best-fit buyer and buying committee, and a named list of target accounts and the security leaders inside them, ranked by fit and timing.</p>
+</div>
+<div class="card reveal">
+<p class="wk">Week 2</p>
+<h3>Sharpen the message</h3>
+<p>Positioning tested against what CISOs are reading this quarter, the objections you'll hear and how to answer them, and a one-page leave-behind.</p>
+</div>
+<div class="card reveal">
+<p class="wk">Week 3</p>
+<h3>Open doors</h3>
+<p>Outreach to the target list under your name or mine, plus warm introductions from twenty years of enterprise relationships where I have them.</p>
+</div>
+<div class="card reveal">
+<p class="wk">Week 4</p>
+<h3>Hand off pipeline</h3>
+<p>First qualified meetings booked and run alongside you, every opportunity logged in your CRM with notes, and a 90-day plan for what comes next.</p>
+</div>
+</div>
+<div class="sprint-cols">
+<div>
+<h3>A good fit if you</h3>
+<ul>
+<li>sell AI-agent security, agent identity, non-human identity or MCP security</li>
+<li>have raised a seed to Series B round</li>
+<li>have product in pilots or early production and no senior seller yet</li>
+<li>want to reach banks, insurers, government or infrastructure buyers</li>
+</ul>
+</div>
+<div>
+<h3>What happens after</h3>
+<ul>
+<li>You keep everything: the list, the messaging and the pipeline</li>
+<li>Continue as a Fractional BD Lead retainer, 10–20 hours a week, month to month after 90 days</li>
+<li>Or hand it to your first sales hire with the market already mapped</li>
+</ul>
+</div>
+</div>
+<p style="margin-top:28px"><a class="btn primary" href="mailto:Jmurphy@lucastaylorgroup.com?subject=Agent-Security%20GTM%20Sprint%20fit%20call">Book a 20-minute fit call</a></p>
+</section>
 <section class="flex wrap" id="flex">
 <h2>Built to flex</h2>
 <p class="sub">A senior executive hire is a long commitment that is hard to resize. A retainer is not. Start small, scale when the work needs it, and shrink back after.</p>
@@ -213,7 +273,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 <div>
 <h2>About James</h2>
 <p>Founder, sales leader, and individual contributor — I've held all three seats. I've built channel programs with Microsoft, Cisco, ShoreTel, and Avaya, run compliance-driven deals under HIPAA and SOX, and represented business to the United Nations as a PVBLIC Foundation ambassador. I serve on the board of Veterans Without Orders and co-developed an interactive exhibit at the 9/11 Museum in New York.</p>
-<p style="margin-top:14px">I publish <a href="https://signalfireaim.io">Signal Fire Aim</a> — GTM intelligence on identity governance and AI security for CISOs and CIOs — and the weekly <a href="https://agenticatlarge.substack.com">Agentic At Large</a> brief on Substack.</p>
+<p style="margin-top:14px">I publish <a href="https://signalfireaim.io">Signal Fire Aim</a> — GTM intelligence on identity governance and AI security for CISOs and CIOs — and the weekly <a href="https://agenticatlarge.substack.com">Agentic At Large</a> brief on Substack. I'm not employed or paid by any vendor I write about; if a company I cover becomes a client, I disclose it.</p>
 </div>
 <div class="roles" aria-label="Career timeline">
 <div class="role"><b>Lucas Taylor Consulting Group — President</b><span>2011 – present</span></div>
@@ -225,6 +285,25 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 </div>
 </section>
 
+<section class="services wrap" id="speaking">
+<h2>Speaking &amp; podcasts</h2>
+<p class="sub">Available for conference sessions, chapter meetings, and podcasts on AI-agent governance and selling security in the agentic era.</p>
+<div class="cards three">
+<div class="card reveal">
+<h3>Who's accountable when the agent acts?</h3>
+<p>Agents now take actions humans used to approve. What identity, authorization, and audit have to look like when the actor isn't a person — and what boards will ask first.</p>
+</div>
+<div class="card reveal">
+<h3>Ten jurisdictions, one control plane</h3>
+<p>A tour of the Global AI Watch: how the EU, US, China, the Gulf and others are governing frontier AI, and why companies will need per-region policy enforced in one place.</p>
+</div>
+<div class="card reveal">
+<h3>Selling security before the incident</h3>
+<p>Twenty years of enterprise deals, applied to agent security: how startups get a CISO meeting, and why the buyer who saw it coming signs first.</p>
+</div>
+</div>
+<p style="margin-top:18px"><a class="btn ghost" href="mailto:Jmurphy@lucastaylorgroup.com?subject=Speaking%20or%20podcast%20request">Book James to speak</a></p>
+</section>
 <section class="ventures wrap" id="ventures">
 <h2>LTG ventures</h2>
 <p class="sub">Operating brands under the Lucas Taylor umbrella.</p>
@@ -232,6 +311,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 <div class="venture reveal">
 <h3>Signal Fire Aim</h3>
 <p>GTM intelligence for the agentic era — identity governance, AI security, and enterprise sales, published under the Agentic At Large brand.</p>
+<!-- LATEST SIGNAL: filled from latest.json; hidden when "active" is false -->
+<p class="latest" id="latest-signal"><b>Latest signal</b><span></span> <a id="latest-link" href="https://signalfireaim.io">Read →</a></p>
 <a href="https://signalfireaim.io">signalfireaim.io →</a>
 </div>
 <div class="venture reveal">
@@ -246,7 +327,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 <div class="wrap">
 <p class="slots">Engagements start in two weeks and flex from one month to ongoing</p>
 <h2>Need a dealmaker three days a week?</h2>
-<p>Tell me what you sell and who should be buying it. If I can help, you'll know inside one call.</p>
+<p>Building in AI-agent security or identity? Tell me what you sell and who should be buying it. If I can help, you'll know inside one call.</p>
 <a class="btn primary" href="mailto:Jmurphy@lucastaylorgroup.com?subject=Fractional%20BD%20inquiry">Jmurphy@lucastaylorgroup.com</a>
 </div>
 </section>
@@ -263,6 +344,16 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-family:'Archivo',san
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 document.getElementById('copyEmail').addEventListener('click', function(){ var b=this, t=b.textContent; (navigator.clipboard?navigator.clipboard.writeText('Jmurphy@lucastaylorgroup.com'):Promise.reject()).then(function(){ b.textContent='copied'; setTimeout(function(){b.textContent=t},1800); }).catch(function(){ window.prompt('Copy this address:','Jmurphy@lucastaylorgroup.com'); }); });
+</script>
+<script>
+  // Latest signal: driven by latest.json (updated by the approved daily publish).
+  fetch('https://signalfireaim.io/latest.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+    if(!d||!d.active||!d.text)return;
+    const el=document.getElementById('latest-signal');
+    el.querySelector('span').textContent=d.text+(d.date?' ('+d.date+')':'');
+    if(d.link)document.getElementById('latest-link').href=d.link;
+    el.style.display='block';
+  }).catch(()=>{});
 </script>
 </body>
 </html>
