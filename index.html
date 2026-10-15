@@ -65,6 +65,15 @@
   .card h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:6px}
   .card .model{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
   .card p{font-size:.98rem;color:#31424f}
+  .cards.four{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:860px){.cards.four{grid-template-columns:1fr}}
+  .card .wk{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
+  .sprint-cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px}
+  @media(max-width:860px){.sprint-cols{grid-template-columns:1fr}}
+  .sprint-cols h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:12px}
+  .sprint-cols ul{margin:0;padding-left:18px;color:#31424f}
+  .sprint-cols li{margin-bottom:8px}
+  .card .more{display:inline-block;margin-top:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 
   /* about */
   .about{padding:64px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:5fr 7fr;gap:48px}
@@ -104,6 +113,7 @@
     <nav class="links" aria-label="Sections">
       <a href="#record">Record</a>
       <a href="#services">Engagements</a>
+      <a href="#sprint">Sprint</a>
       <a href="#about">About</a>
       <a href="#speaking">Speaking</a>
       <a href="#ventures">Ventures</a>
@@ -155,8 +165,56 @@
         <h3>Agent-Security GTM Sprint</h3>
         <p class="model">From $12,500 · fixed fee · 30 days · the easiest way to start</p>
         <p>Built for AI-agent security and identity startups: a named list of the CISOs and buyers who should be talking to you, messaging tested against what they're reading this quarter, and first qualified meetings booked — handed to your team as a working pipeline, not a slide deck. Many retainers start here.</p>
+        <a class="more" href="#sprint">See how the Sprint works →</a>
       </div>
     </div>
+  </section>
+
+  <section class="services wrap" id="sprint">
+    <h2>The Agent-Security GTM Sprint</h2>
+    <p class="sub">30 days. Fixed fee from $12,500. Built for AI-agent security and identity startups that have raised and need real pipeline in front of CISOs — before, or instead of, a full-time sales hire.</p>
+    <div class="cards four">
+      <div class="card reveal">
+        <p class="wk">Week 1</p>
+        <h3>Map the market</h3>
+        <p>Your best-fit buyer and buying committee, and a named list of target accounts and the security leaders inside them, ranked by fit and timing.</p>
+      </div>
+      <div class="card reveal">
+        <p class="wk">Week 2</p>
+        <h3>Sharpen the message</h3>
+        <p>Positioning tested against what CISOs are reading this quarter, the objections you'll hear and how to answer them, and a one-page leave-behind.</p>
+      </div>
+      <div class="card reveal">
+        <p class="wk">Week 3</p>
+        <h3>Open doors</h3>
+        <p>Outreach to the target list under your name or mine, plus warm introductions from twenty years of enterprise relationships where I have them.</p>
+      </div>
+      <div class="card reveal">
+        <p class="wk">Week 4</p>
+        <h3>Hand off pipeline</h3>
+        <p>First qualified meetings booked and run alongside you, every opportunity logged in your CRM with notes, and a 90-day plan for what comes next.</p>
+      </div>
+    </div>
+    <div class="sprint-cols">
+      <div>
+        <h3>A good fit if you</h3>
+        <ul>
+          <li>sell AI-agent security, agent identity, non-human identity or MCP security</li>
+          <li>have raised a seed to Series B round</li>
+          <li>have product in pilots or early production and no senior seller yet</li>
+          <li>want to reach banks, insurers, government or infrastructure buyers</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What happens after</h3>
+        <ul>
+          <li>You keep everything: the list, the messaging and the pipeline</li>
+          <li>Continue as a Fractional BD Lead retainer, 10–20 hours a week, month to month after 90 days</li>
+          <li>Or hand it to your first sales hire with the market already mapped</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:28px"><a class="btn primary" href="mailto:Jmurphy@lucastaylorgroup.com?subject=Agent-Security%20GTM%20Sprint%20fit%20call">Book a 20-minute fit call</a></p>
   </section>
 
   <section class="about wrap" id="about">
