@@ -80,6 +80,8 @@
   @media(max-width:720px){.vgrid{grid-template-columns:1fr}}
   .venture h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:6px}
   .venture p{font-size:.98rem;color:#31424f}
+  .venture .latest{display:none;margin:10px 0 12px;padding:10px 12px;border-left:3px solid var(--copper);background:var(--white);font-size:.92rem;color:#31424f}
+  .venture .latest b{display:block;font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--copper);margin-bottom:4px}
   .venture a{font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 
   /* contact */
@@ -178,6 +180,8 @@
       <div class="venture reveal">
         <h3>Signal Fire Aim</h3>
         <p>GTM intelligence for the agentic era — identity governance, AI security, and enterprise sales, published under the Agentic At Large brand.</p>
+        <!-- LATEST SIGNAL: filled from latest.json; hidden when "active" is false -->
+        <p class="latest" id="latest-signal"><b>Latest signal</b><span></span> <a id="latest-link" href="https://signalfireaim.io">Read →</a></p>
         <a href="https://signalfireaim.io">signalfireaim.io →</a>
       </div>
       <div class="venture reveal">
@@ -208,6 +212,16 @@
 <script>
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+<script>
+  // Latest signal: driven by latest.json (updated by the approved daily publish).
+  fetch('latest.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+    if(!d||!d.active||!d.text)return;
+    const el=document.getElementById('latest-signal');
+    el.querySelector('span').textContent=d.text+(d.date?' ('+d.date+')':'');
+    if(d.link)document.getElementById('latest-link').href=d.link;
+    el.style.display='block';
+  }).catch(()=>{});
 </script>
 </body>
 </html>
